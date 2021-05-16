@@ -1,0 +1,28 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Add column</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+
+    <div class="modal-body">
+        <form [formGroup]="columnForm">
+            <div class="form-group mb-2">
+                <label for="id">Id/Label (required)</label>
+                <input class="form-control form-control-sm" formControlName="id" id="id" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type (required)</label>
+                <select class="form-control" formControlName="type" id="type">
+                    <option value="text">text</option>
+                    <option value="number">number</option>
+                    <option value="date">date</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-outline-dark" (click)="modal.close()" [disabled]="!columnForm.valid" type="button">Add</button>
+    </div>
+</ng-template>

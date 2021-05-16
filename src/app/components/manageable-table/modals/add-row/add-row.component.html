@@ -1,0 +1,21 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Add row</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+
+    <div class="modal-body">
+        <form>
+            <ng-container *ngFor="let attribute of attributes">
+                <div class="form-group mb-2">
+                    <label [for]="attribute.id">{{ attribute.id }}</label>
+                    <input [(ngModel)]="attribute.value" class="form-control form-control-sm" [id]="attribute.id" [name]="attribute.id" [type]="attribute.type">
+                </div>
+            </ng-container>
+        </form>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Add</button>
+    </div>
+</ng-template>

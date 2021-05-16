@@ -1,0 +1,244 @@
+{
+    "atpRanking": [
+        {
+            "position": 1,
+            "firstName": "Novak",
+            "lastName": "Djoković",
+            "birthdate": "1987-05-22",
+            "nationality": "SRB",
+            "points": 10963
+        },
+        {
+            "position": 2,
+            "firstName": "Daniil",
+            "lastName": "Medvedev",
+            "birthdate": "1996-02-11",
+            "nationality": "RUS",
+            "points": 9780
+        },
+        {
+            "position": 3,
+            "firstName": "Rafael",
+            "lastName": "Nadal",
+            "birthdate": "1986-06-03",
+            "nationality": "ESP",
+            "points": 9130
+        },
+        {
+            "position": 4,
+            "firstName": "Dominic",
+            "lastName": "Thiem",
+            "birthdate": "1993-09-03",
+            "nationality": "AUT",
+            "points": 8365
+        },
+        {
+            "position": 5,
+            "firstName": "Stefanos",
+            "lastName": "Tsitsipas",
+            "birthdate": "1998-08-12",
+            "nationality": "GRE",
+            "points": 7430
+        },
+        {
+            "position": 6,
+            "firstName": "Alexander",
+            "lastName": "Zverev",
+            "birthdate": "1997-04-20",
+            "nationality": "GER",
+            "points": 6945
+        },
+        {
+            "position": 7,
+            "firstName": "Andrey",
+            "lastName": "Rublev",
+            "birthdate": "1997-10-20",
+            "nationality": "RUS",
+            "points": 6000
+        },
+        {
+            "position": 8,
+            "firstName": "Roger",
+            "lastName": "Federer",
+            "birthdate": "1981-08-08",
+            "nationality": "SUI",
+            "points": 5695
+        },
+        {
+            "position": 9,
+            "firstName": "Matteo",
+            "lastName": "Berrettini",
+            "birthdate": "1996-04-12",
+            "nationality": "ITA",
+            "points": 3958
+        },
+        {
+            "position": 10,
+            "firstName": "Diego",
+            "lastName": "Schwartzman",
+            "birthdate": "1992-08-16",
+            "nationality": "ARG",
+            "points": 3465
+        },
+        {
+            "position": 11,
+            "firstName": "Roberto",
+            "lastName": "Bautista Agut",
+            "birthdate": "1988-04-14",
+            "nationality": "ESP",
+            "points": 3148
+        },
+        {
+            "position": 12,
+            "firstName": "Pablo",
+            "lastName": "Carreño Busta",
+            "birthdate": "1991-07-12",
+            "nationality": "ESP",
+            "points": 3085
+        },
+        {
+            "position": 13,
+            "firstName": "David",
+            "lastName": "Goffin",
+            "birthdate": "1990-12-07",
+            "nationality": "BEL",
+            "points": 2875
+        },
+        {
+            "position": 14,
+            "firstName": "Gaël",
+            "lastName": "Monfils",
+            "birthdate": "1999-04-15",
+            "nationality": "FRA",
+            "points": 2703
+        },
+        {
+            "position": 15,
+            "firstName": "Denis",
+            "lastName": "Shapovalov",
+            "birthdate": "1986-09-01",
+            "nationality": "CAN",
+            "points": 2675
+        },
+        {
+            "position": 1,
+            "firstName": "Novak",
+            "lastName": "Djoković",
+            "birthdate": "1987-05-22",
+            "nationality": "SRB",
+            "points": 10963
+        },
+        {
+            "position": 2,
+            "firstName": "Daniil",
+            "lastName": "Medvedev",
+            "birthdate": "1996-02-11",
+            "nationality": "RUS",
+            "points": 9780
+        },
+        {
+            "position": 3,
+            "firstName": "Rafael",
+            "lastName": "Nadal",
+            "birthdate": "1986-06-03",
+            "nationality": "ESP",
+            "points": 9130
+        },
+        {
+            "position": 4,
+            "firstName": "Dominic",
+            "lastName": "Thiem",
+            "birthdate": "1993-09-03",
+            "nationality": "AUT",
+            "points": 8365
+        },
+        {
+            "position": 5,
+            "firstName": "Stefanos",
+            "lastName": "Tsitsipas",
+            "birthdate": "1998-08-12",
+            "nationality": "GRE",
+            "points": 7430
+        },
+        {
+            "position": 6,
+            "firstName": "Alexander",
+            "lastName": "Zverev",
+            "birthdate": "1997-04-20",
+            "nationality": "GER",
+            "points": 6945
+        },
+        {
+            "position": 7,
+            "firstName": "Andrey",
+            "lastName": "Rublev",
+            "birthdate": "1997-10-20",
+            "nationality": "RUS",
+            "points": 6000
+        },
+        {
+            "position": 8,
+            "firstName": "Roger",
+            "lastName": "Federer",
+            "birthdate": "1981-08-08",
+            "nationality": "SUI",
+            "points": 5695
+        },
+        {
+            "position": 9,
+            "firstName": "Matteo",
+            "lastName": "Berrettini",
+            "birthdate": "1996-04-12",
+            "nationality": "ITA",
+            "points": 3958
+        },
+        {
+            "position": 10,
+            "firstName": "Diego",
+            "lastName": "Schwartzman",
+            "birthdate": "1992-08-16",
+            "nationality": "ARG",
+            "points": 3465
+        },
+        {
+            "position": 11,
+            "firstName": "Roberto",
+            "lastName": "Bautista Agut",
+            "birthdate": "1988-04-14",
+            "nationality": "ESP",
+            "points": 3148
+        },
+        {
+            "position": 12,
+            "firstName": "Pablo",
+            "lastName": "Carreño Busta",
+            "birthdate": "1991-07-12",
+            "nationality": "ESP",
+            "points": 3085
+        },
+        {
+            "position": 13,
+            "firstName": "David",
+            "lastName": "Goffin",
+            "birthdate": "1990-12-07",
+            "nationality": "BEL",
+            "points": 2875
+        },
+        {
+            "position": 14,
+            "firstName": "Gaël",
+            "lastName": "Monfils",
+            "birthdate": "1999-04-15",
+            "nationality": "FRA",
+            "points": 2703
+        },
+        {
+            "position": 15,
+            "firstName": "Denis",
+            "lastName": "Shapovalov",
+            "birthdate": "1986-09-01",
+            "nationality": "CAN",
+            "points": 2675
+        }
+    ]
+}

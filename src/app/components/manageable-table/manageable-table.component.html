@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+
+        <div class="d-flex gap-1">
+            <button class="btn btn-primary btn-sm w-100" (click)="addColumnModal.open()" type="button">Add column</button>
+            <button class="btn btn-primary btn-sm w-100" (click)="addRowModal.open(columns)" type="button">Add row</button>
+        </div>
+
+        <table class="table table-striped my-3 border-top">
+            <thead>
+                <tr>
+                    <ng-container *ngFor="let column of columns; let index = index">
+                        <th *ngIf="!column.hidden">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <a class="px-2" (click)="toggleSticky(column)">
+                                        <i *ngIf="!column.sticky" class="bi-pin-angle-fill pointer" title="Click to pin"></i>
+                                        <i *ngIf="column.sticky" class="bi-pin-fill pointer" title="Click to unpin"></i>
+                                    </a>
+                                    <a class="px-2" (click)="hideColumn(column)">
+                                        <i class="bi-eye-slash-fill pointer" title="Click to hide"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row height-40px h-100">
+                                <div class="col-3 my-auto">
+                                    <button *ngIf="index !== 0 && getLastStickyIndex() + 1 < index" class="btn btn-outline-primary btn-sm h-100" (click)="swapColumn(column, 'toLeft')" type="button">&#60;</button>
+                                </div>
+                                <div class="col-6 my-auto text-center">
+                                    {{ column.label }}
+                                </div>
+                                <div class="col-3 my-auto">
+                                    <button *ngIf="index !== columns.length - 1 && getLastStickyIndex() < index" class="btn btn-outline-primary btn-sm h-100" (click)="swapColumn(column, 'toRight')" type="button">&#62;</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <i *ngIf="sorter.sort !== column.id" class="bi-chevron-expand pointer" (click)="sort(column, 'asc')" title="Click to sort"></i>
+                                    <i *ngIf="sorter.sort === column.id && sorter.order === 'asc'" class="bi-chevron-up pointer" (click)="sort(column, 'desc')" title="Click to reverse sort"></i>
+                                    <i *ngIf="sorter.sort === column.id && sorter.order === 'desc'" class="bi-chevron-down pointer" (click)="sort()" title="Click to unsort"></i>
+                                </div>
+                            </div>
+                        </th> 
+                    </ng-container>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of rows">
+                    <ng-container *ngFor="let column of columns">
+                        <td *ngIf="!column.hidden">
+                            <div class="row">
+                                <div class="col-12">
+                                    {{ row[column.id] }}
+                                </div>
+                            </div>
+                        </td> 
+                    </ng-container>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul class="pagination justify-content-center">
+            <li *ngFor="let item of [].constructor(paginator.pages); let i = index" class="page-item pointer" [class.active]="paginator.page === i + 1">
+                <a class="page-link" (click)="changePage(i + 1)">{{ i + 1 }}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<app-add-column (addColumn)="addColumn($event)"></app-add-column>
+<app-add-row (addRow)="addRow($event)"></app-add-row>
